@@ -1,0 +1,30 @@
+{
+  "name": "express-app-boilerplate",
+  "version": "1.0.0",
+  "description": "Boiler plate for express apps",
+  "main": "index.js",
+  "engines": {
+    "node": "14.17.3"
+  },
+  "scripts": {
+    "start": "node .",
+    "build": "babel --delete-dir-on-start --out-dir dist --copy-files --ignore \"**/__tests__/**,**/__mocks__/**\" --no-copy-ignored src"
+  },
+  "author": "Tom Mitchell",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "loglevel": "^1.7.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "@babel/node": "^7.14.7",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/register": "^7.14.5",
+    "nodemon": "^2.0.12"
+  }
+}
